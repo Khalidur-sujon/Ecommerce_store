@@ -164,6 +164,7 @@
 		}
 
 		url = "/process-order/";
+
 		fetch(url, {
 			method: "POST",
 			headers: {
@@ -179,6 +180,7 @@
 			.then((data) => {
 				console.log("Success:", data);
 				alert("Transaction completed!");
+
 				cart = {};
 				document.cookie =
 					"cart=" + JSON.stringify(cart) + ";domain=;path=/";
